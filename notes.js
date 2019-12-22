@@ -60,6 +60,7 @@ const loadNotes = () => {
 		return JSON.parse(dataJson);
 	} catch (e) {
 		console.log(chalk.red('No such file as notes.json!'));
+		console.log(chalk.green('File created.'));
 		return [];
 	}
 }
